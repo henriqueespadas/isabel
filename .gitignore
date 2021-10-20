@@ -2,4 +2,6 @@
 venv
 storage.db
 .pytest_cache
-env
+.env
+idea/workspace.xml
+
