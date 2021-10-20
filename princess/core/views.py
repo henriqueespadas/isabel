@@ -1,5 +1,6 @@
 # from django.http import HttpResponse
 from django.shortcuts import render
+from .models import Talk
 
 # Create your views here.
 
@@ -9,5 +10,15 @@ from django.shortcuts import render
 #
 
 
+# def index(request):
+#    return render(request, 'index.html')
+
+
 def index(request):
-    return render(request, "index.html")
+    talk = Talk.objects.all()
+    context = {"talks": talk}
+    return render(
+        request,
+        "index.html",
+        context,
+    )

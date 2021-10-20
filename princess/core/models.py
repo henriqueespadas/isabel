@@ -6,7 +6,7 @@ class Talk(models.Model):
     description = models.TextField("descricao", null=True, blank=True)
 
     class Meta:
-        ordering = "title"
+        ordering = ("title",)
         verbose_name = "palestra"
         verbose_name_plural = "palestras"
 

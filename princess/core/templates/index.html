@@ -14,7 +14,13 @@
 </head>
 <body>
   <h1> Isabel Project</h1>
-  <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dui nisi, aliquet a est eget, tempor condimentum metus. Mauris velit odio, cursus at maximus et, rhoncus ac nisl. Praesent velit purus, dictum aliquet interdum vel, dapibus eu urna. Nullam dictum malesuada nisl at vestibulum. Mauris vulputate quis neque eget vehicula. Maecenas condimentum lacus at turpis elementum, quis dapibus tortor viverra. Pellentesque ultrices ipsum non justo ullamcorper, nec ultricies purus maximus. Sed rhoncus, velit eu cursus sodales, diam lectus vehicula sem, eget efficitur enim neque quis lorem. Donec elementum suscipit quam quis facilisis.</p>
+  
+  <ul>
+
+    {% for talk in talks %}
+      <li>{{ talk.title }}</li>
+    {% endfor %}
+
+  </ul>
 </body>
 </html>
