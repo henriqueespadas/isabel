@@ -7,7 +7,6 @@ from .models import Talk
 
 # def index(request):
 #     return HttpResponse('<h1 style="font-family: sans-serif">Isabel Project</h1>')
-#
 
 
 # def index(request):
