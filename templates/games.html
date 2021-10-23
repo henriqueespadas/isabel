@@ -1,0 +1,21 @@
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+  <h1> Isabel Project</h1>
+
+  <ul>
+
+    {% for game in games %}
+      <li>{{ game.name }}</li>
+    {% endfor %}
+
+  </ul>
+</body>
+</html>

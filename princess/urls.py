@@ -15,9 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from princess.core.views import index
+from princess.core.views import index, games
 
-urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("", index),
-]
+urlpatterns = [path("admin/", admin.site.urls), path("", index), path("games/", games)]
